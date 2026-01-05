@@ -24,3 +24,15 @@ pnpm-debug.log*
 docker-data/
 dynamodb-data/
 
+
+# Node
+node_modules/
+dist/
+coverage/
+
+# Env
+.env
+.env.*
+
+# OS
+.DS_Store
