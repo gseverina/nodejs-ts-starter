@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-ts",
+  "version": "1.0.0",
+  "description": "Plain Node.js + TypeScript starter with DynamoDB Local",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "debug": "tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+
+    "infra:up": "docker compose up -d dynamodb",
+    "infra:down": "docker compose down",
+
+    "ddb:init": "tsx src/scripts/create-table.ts"
+  }
+}
